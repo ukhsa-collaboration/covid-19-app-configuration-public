@@ -1,0 +1,3 @@
+include ':android:common', ':android:scenarios', ':android:production'
+rootProject.name = 'config'
+

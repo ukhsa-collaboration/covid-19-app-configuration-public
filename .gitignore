@@ -1,0 +1,21 @@
+.DS_Store
+
+# SPM
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata/
+
+# Android
+*.iml
+.gradle
+local.properties
+.idea/
+.DS_Store
+build
+captures
+.externalNativeBuild
+.cxx
+jacoco.exec
+.envrc
+.tool-versions
