@@ -57,3 +57,25 @@ At the same time, this process also provides the security features we need out o
 not accessible by just looking inside the unzipped the ipa files. Rather, it will require analysis of the binary itself.
 
 We will revisit the configuration changing process Xcode 12 release to see if we want to achieve the same result in a different way.
+
+## PLEASE READ REGARDING MAVEN PACKAGES
+
+Currently we are having a technical issue making the maven packages available in GitHub. For the time being please do the following:
+
+#### Local Publish Configuration Package
+
+./gradlew publishToMavenLocal
+
+#### Edit Android App Source
+
+edit `build.gradle` and add `mavenLocal()` in the *two* `repositories` definitions
+
+it looks like
+
+```
+repositories {
+  mavenLocal()
+  google()
+  ...
+```
+

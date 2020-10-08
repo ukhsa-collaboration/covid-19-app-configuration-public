@@ -15,7 +15,7 @@ buildscript {
 subprojects {
     apply plugin: "maven-publish"
     ext.group = 'uk.nhs.covid19'
-    ext.version = '1.0.15-SNAPSHOT'
+    ext.version = '1.0.23-SNAPSHOT'
     publishing {
         repositories {
             maven {
@@ -30,9 +30,8 @@ subprojects {
         publications {
             gpr(MavenPublication) {
                 groupId = "uk.nhs.covid19"
-                version = "1.0.15-SNAPSHOT"
+                version = "1.0.23-SNAPSHOT"
             }
         }
     }
 }
-

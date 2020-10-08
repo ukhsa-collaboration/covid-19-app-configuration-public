@@ -5,11 +5,13 @@ val FieldTestConfiguration = EnvironmentConfiguration(
     distributedRemote = Remote(
         host = "example.com",
         path = "Test/v1",
-        headers = mapOf("x-api-key" to "key")
+        headers = mapOf("x-api-key" to "key"),
+        signatureKeys = listOf(stagingSignatureKey)
     ),
     apiRemote = Remote(
         host = "example.com",
         path = "Test/v1",
-        headers = mapOf("x-api-key" to "key")
+        headers = mapOf("x-api-key" to "key"),
+        signatureKeys = listOf(stagingSignatureKey)
     )
 )
